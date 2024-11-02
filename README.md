@@ -12,9 +12,11 @@ This project is a **car price prediction** tool built with **Python** and **Stre
 
    project-folder/ │ 
    ├── main.py 
-   # Main Streamlit application 
+   Main Streamlit application 
    ├── car_price_model.joblib 
-   # Trained machine learning model 
+   Trained machine learning model 
    ├── requirements.txt 
-   # Python dependencies 
-   └── README.md # Project
+   Python dependencies 
+   └── README.md 
+   
+   # Project
