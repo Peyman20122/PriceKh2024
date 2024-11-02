@@ -72,15 +72,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Feel free to reach out if you have any questions or suggestions for improvement.
 ```
-
-### نکات:
-- **username** در آدرس `git clone` را با نام کاربری GitHub خود جایگزین کنید.
-- اگر فایل `requirements.txt` را ندارید، می‌توانید با اجرای دستور زیر، آن را ایجاد کنید:
+### Notes:
+- Replace **username** in `git clone' with your GitHub username.
+- If you don't have the `requirements.txt' file, you can create it by running the following command:
   ```bash
   pip freeze > requirements.txt
-  ```
 
-امیدوارم این فایل README برای پروژه‌ شما مفید باشد!
 
 
 
