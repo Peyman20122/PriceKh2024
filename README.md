@@ -2,8 +2,8 @@
 
 This project is a **car price prediction** tool built with **Python** and **Streamlit**. The model leverages **machine learning** techniques to predict the price of a car based on various input features like model year, mileage, engine type, and more. 
 
+![Project Owner](https://github.com/user-attachments/assets/5703ab83-1686-45f8-a91b-a282a83e9ab8)
 
-![Project Owner](![Uploading photo_2024-11-02_23-42-52.jpg…])
 
 This project is a **car price prediction** tool built with **Python** and **Streamlit**. The model leverages **machine learning** techniques to predict the price of a car based on various input features like model year, mileage, engine type, and more. 
 
