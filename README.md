@@ -16,4 +16,12 @@ This project is a **car price prediction** tool built with **Python** and **Stre
                    ├── requirements.txt 
                    └── README.md 
    
-   # Project
+# Project documentation
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+      git clone https://github.com/yourusername/car-price-prediction.git
+      cd car-price-prediction
+
