@@ -2,12 +2,10 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# عنوان صفحه
 st.markdown("""
     <h1 style='text-align: right;'>مدل پیش‌بینی قیمت خودرو</h1>
     """, unsafe_allow_html=True)
 
-# تنظیمات استایل برای راست‌چین کردن عناصر
 st.markdown("""
     <style>
     .css-1dq8tca {
@@ -22,20 +20,17 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# بارگذاری داده‌ها و مدل
 train_data = pd.read_csv('train.csv')
 model = joblib.load('car_price_model.joblib.gz')
 preprocessor = joblib.load("car_price_model_preprocessor.joblib")
 
-# ایجاد دیکشنری‌ها برای ستون‌های غیر عددی
 column_dictionaries = {}
 for col in train_data.select_dtypes(include='object').columns:
     unique_values = train_data[col].unique()
-    # ایجاد دیکشنری که به هر مقدار یکتا یک عدد اختصاص می‌دهد
+
     value_to_number = {value: idx for idx, value in enumerate(unique_values)}
     column_dictionaries[col] = value_to_number
 
-# دریافت ورودی‌های کاربر و تبدیل آن‌ها به مقدار عددی
 title = st.selectbox("نام خودرو", list(column_dictionaries['title'].keys()))
 year = st.number_input("سال ساخت", min_value=1350, max_value=1403, value=1390)
 mileage = st.number_input("کارکرد (به کیلومتر)", min_value=0.0, value=110000.0, step=1000.0)
@@ -49,7 +44,7 @@ volume = st.number_input("حجم موتور (به سی‌سی)", min_value=0.0, 
 engine = st.selectbox("نوع موتور", list(column_dictionaries['engine'].keys()))
 acceleration = st.number_input("شتاب (0 تا 100)", min_value=0.0, value=13.0, step=0.1)
 
-# تبدیل ورودی‌ها به مقدار عددی با استفاده از دیکشنری‌ها
+
 input_data = pd.DataFrame({
     "title": [column_dictionaries['title'][title]],
     "year": [year],
@@ -65,10 +60,6 @@ input_data = pd.DataFrame({
     "acceleration": [acceleration]
 })
 
-# پردازش داده‌های ورودی با preprocessor و پیش‌بینی با مدل
-# processed_data = preprocessor.transform(input_data)  # پردازش داده‌ها
-
-# دکمه پیش‌بینی قیمت
 if st.button("پیش‌بینی قیمت"):
     predicted_price = model.predict(input_data)
     st.markdown(f"""
