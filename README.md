@@ -211,7 +211,9 @@ if st.button("پیش‌بینی قیمت"):
 
 ------
 
-This completes the explanation of the `main.py` file. If you have any questions or need further clarifications, feel free to ask!
+## Project link on my kaggle page
+
+[Project link]([https://pricekh2024-zvfsxgwga9unazxe8f4qyg.streamlit.app/](https://www.kaggle.com/code/peimandaii/predict-price-iranian-car))
 
 
 
