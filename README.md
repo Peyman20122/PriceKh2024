@@ -10,7 +10,7 @@ This project is a car price prediction tool built with Python and Streamlit. The
 
 ## Link to Streamlit App
 
-[Open in Streamlit]((https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pricekh2024-zvfsxgwga9unazxe8f4qyg.streamlit.app/))
+[Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pricekh2024-zvfsxgwga9unazxe8f4qyg.streamlit.app/)
 
 ## Features
 
