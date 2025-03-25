@@ -213,7 +213,7 @@ if st.button("پیش‌بینی قیمت"):
 
 ## Project link on my kaggle page
 
-[Project link]([https://pricekh2024-zvfsxgwga9unazxe8f4qyg.streamlit.app/](https://www.kaggle.com/code/peimandaii/predict-price-iranian-car)
+[Project link](https://www.kaggle.com/code/peimandaii/predict-price-iranian-car)
 
 
 
